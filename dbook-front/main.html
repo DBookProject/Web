@@ -16,7 +16,7 @@
     <div class="main">
         <header class="main__header-container">
             <ul class="main__header-menu ui grid">
-                <li class="nine wide column">D-Book</li>
+                <li class="nine wide column"><img src="D-Book_Logo/D-Book_Logo.png" id="logo"></li>
                 <li class="seven wide column main__header-menu">    
                     <div class="main__header-menu-search ui action input ">
                         <input type="text" placeholder="SEARCH">
@@ -57,12 +57,19 @@
                     <li class="book-item">
                         <img src="img/동물.jpg">
                         <div class="book-title">시튼 동물기 1</div>
-                        <div class="book-writer">어니스트 톰프슨 시튼</div>                        
+                        <div class="book-writer">어니스트 톰프슨 시튼</div>
+                        <span><button>내 서재 추가</button>  <button>내 서재 삭제</button></span>                       
                     </li>
                     <li class="book-item">
                         <img src="img/부엉이.jpg">
                         <div class="book-title">수리부엉이는 황혼에 날아오른다</div>
                         <div class="book-writer">무라카미 하루키, 가와카미 미에코</div>
+                        <p class="btn-switch">					
+                            <input type="radio" id="yes" name="switch" class="btn-switch__radio btn-switch__radio_yes" />
+                            <input type="radio" checked id="no" name="switch" class="btn-switch__radio btn-switch__radio_no" />		
+                            <label for="yes" class="btn-switch__label btn-switch__label_yes"><span class="btn-switch__txt">공유중</span></label>								  
+                            <label for="no" class="btn-switch__label btn-switch__label_no"><span class="btn-switch__txt">공유하기</span></label>							
+                        </p>
                     </li>
                     <li class="book-item">
                         <img src="img/여우.jpg">
